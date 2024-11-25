@@ -1,0 +1,4 @@
+[filter "split"]
+clean = "xz -9 -c | split -b 50MB -a 4 %f.part."
+smudge = "cat %f.part.* | xz -d -c"
+required = true
