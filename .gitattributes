@@ -1,1 +1,2 @@
 *.pbf filter=split -text
+*.parts/* -text
