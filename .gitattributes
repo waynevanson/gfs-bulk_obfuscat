@@ -1,2 +1,2 @@
+# Add your filter
 *.pbf filter=split -text
-*.parts/* -text

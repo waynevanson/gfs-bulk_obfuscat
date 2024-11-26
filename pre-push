@@ -1,0 +1,6 @@
+#!/bin/sh
+# if the commit contains the ADDITION of a part,
+# it should be uploaded on it's own.
+# otherwise upload all until another part addition is find.
+# 
+# Essentially: if a pack to send to remote is too big, break down the commits until it can be sent.
