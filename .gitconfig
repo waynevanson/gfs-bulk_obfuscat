@@ -1,8 +1,8 @@
 # Add this to git config
 [filter "split"]
-# compress and split into parts relative to the file.
-clean = "split -b 50MB -a 4 '.git/parts/%f.part.'"
-# concatenate parts and decompress and restore file.
+# split into parts relative to the file.
+clean = "split -b 50MB -a 3 '.git/parts/%f.part.'"
+# concatenate parts and restore file.
 smudge = "cat .git/parts/%f.part.*"
 required = true
 
